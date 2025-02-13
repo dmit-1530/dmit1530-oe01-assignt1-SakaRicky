@@ -3,15 +3,283 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
+    --black: #000;
 }
 
 body {
     color: #000;
-    text-align: center; 
+    text-align: center;
+    
 }
 
 header, footer {
     background-color: var(--blue-grey-50);
     color: #fff;
     padding: 2rem 4rem;   
+}
+
+/* My classes */
+ /* Remove default margin */
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ p,
+ figure,
+ blockquote,
+ dl,
+ dd {
+   margin: 0;
+ }
+
+body, header, footer {
+    font-family: "Libre Baskerville", serif;
+}
+
+header, footer {
+    background-color: var(--black);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+img {
+    display: block;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    align-items: last baseline;
+    font-size: 1.7rem;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    background-color: var(--blue-grey-50);
+}
+
+.hero * {
+    margin: 1rem 0;
+}
+
+.hero a {
+    background-color: var(--black);
+    padding: 1.5rem;
+    color: var(--blue-grey-50);
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+}
+
+.hero-image {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.hero img {
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.designs > * {
+    margin: 1.5rem;
+}
+
+.tiles-container {
+    margin: 4rem 0;
+}
+
+.tile h3 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.tile p {
+    margin: 1rem 0;
+}
+
+
+.stars {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.quote {
+    background-color: var(--blue-grey-200);
+    color: #fff;
+    font-weight: lighter;
+}
+
+.author {
+    margin: 4rem 0 2rem 0;
+}
+
+.author p {
+    margin-top: 1.5rem;
+}
+
+.architecture {
+    background-color: var(--blue-grey-100);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.architecture_card_container {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.card_list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.card_list_item {
+    margin: 1rem 0;
+}
+
+.list_item_heading {
+    font-weight: 900;
+}
+
+.card_image {
+    margin: 4rem 0;
+}
+
+.subscribers {
+    background-color: var(--blue-grey-900);
+    padding: 4rem 2rem;
+}
+
+.subscribe_container {
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.subscribe_container > :first-child {
+    padding: 4rem 4rem 0 4rem;
+}
+
+.subscribe_container > :last-child {
+    margin: 0 4rem 4rem 4rem;
+    padding: 1.5rem;
+    background-color: var(--black);
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.subscribe_container p {
+    padding: 2rem 1rem;
+}
+
+/* Galery section */
+
+.gallery_body {
+    text-align: left;
+}
+
+.art_galery {
+    background-color: var(--blue-grey-50);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.galery_image {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.art_galery > h2 {
+    text-align: center;
+}
+
+.galery_text * {
+    margin-top: 3rem;
+}
+
+.etude_quote {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hub {
+    background-color: var(--blue-grey-200);
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.hub * {
+    margin: 2rem 0;
+}
+
+.features {
+    background-color: var(--blue-grey-900);
+    color: #fff;
+}
+
+.galery_image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.features_list {
+    padding-top: 1rem;
+}
+
+.card_list_item {
+    margin-top: 2rem;
+}
+
+/* Footer */
+
+footer {
+    padding: 4rem 2rem;
+    font-size: 0.8rem;
+    text-align: left;
+
+}
+
+.footer_links_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+
+.footer_links * {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+footer > :last-child {
+    text-align: center;
 }
