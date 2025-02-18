@@ -9,35 +9,39 @@
 body {
     color: #000;
     text-align: center;
-    
+    font-size: 1.2rem;
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--blue-grey-50);
     color: #fff;
-    padding: 2rem 4rem;   
+    padding: 2rem 4rem;
 }
 
 /* My classes */
- /* Remove default margin */
- body,
- h1,
- h2,
- h3,
- h4,
- p,
- figure,
- blockquote,
- dl,
- dd {
-   margin: 0;
- }
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
 
-body, header, footer {
+body,
+header,
+footer {
     font-family: "Libre Baskerville", serif;
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--black);
 }
 
@@ -51,6 +55,9 @@ section {
 
 img {
     display: block;
+    /* width: 100%;
+        height: 100%;
+        object-fit: cover; */
 }
 
 /* A elements that don't have a class get default styles */
@@ -111,7 +118,7 @@ ul {
     object-fit: cover;
 }
 
-.designs > * {
+.designs>* {
     margin: 1.5rem;
 }
 
@@ -154,7 +161,7 @@ ul {
     padding-bottom: 2rem;
 }
 
-.architecture > * {
+.architecture>* {
     margin: 1.5rem;
 }
 
@@ -192,11 +199,11 @@ ul {
     margin: 0 auto;
 }
 
-.subscribe_container > :first-child {
+.subscribe_container> :first-child {
     padding: 4rem 4rem 0 4rem;
 }
 
-.subscribe_container > :last-child {
+.subscribe_container> :last-child {
     margin: 0 4rem 4rem 4rem;
     padding: 1.5rem;
     background-color: var(--black);
@@ -225,7 +232,7 @@ ul {
     margin-bottom: 1rem;
 }
 
-.art_galery > h2 {
+.art_galery>h2 {
     text-align: center;
 }
 
@@ -287,7 +294,7 @@ footer {
     text-align: left;
 }
 
-footer > :last-child {
+footer> :last-child {
     text-align: center;
 }
 
@@ -324,7 +331,8 @@ footer > :last-child {
         margin-right: 2rem;
     }
 
-    .designs > h2, .designs > p {
+    .designs>h2,
+    .designs>p {
         margin-left: 0;
         margin-right: 0;
     }
@@ -357,17 +365,73 @@ footer > :last-child {
         width: 50%;
     }
 
-    /* .architecture .card_image {
-        width: 40%;
-    } */
-
     .card:nth-child(2) .card_description {
         order: 2;
     }
 
+    /* Galery */
+    .galery_card {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .galery_text {
+        width: 50%;
+    }
+
+    .galery_card:nth-child(2) .galery_image {
+        order: 2;
+    }
+
+    .galery_image_desc {
+        margin: 1rem 0;
+    }
+
+    .etude_quote {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .hub_tiles_container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .hub>h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .features>h2 {
+        text-align: center;
+    }
+
+    .features_container {
+        display: flex;
+        gap: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .features_container>.features_image {
+        width: 50%;
+    }
+
+    .features_container>.features_image img {
+        height: 100%;
+    }
+
+    .features_container>.features_points {
+        width: 50%;
+    }
+
+    /* Footer */
+
     footer {
         padding: 4rem;
-    
+
     }
 
     .footer_container {
@@ -380,10 +444,11 @@ footer > :last-child {
         flex-grow: 1;
         display: flex;
         justify-content: space-between;
+        width: 60%;
     }
 
     .logo_text {
-        width: 80%;
+        width: 90%;
     }
 
     .footer_text {
